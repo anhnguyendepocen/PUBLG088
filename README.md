@@ -54,62 +54,62 @@ We will walk you through this process in the first two weeks, so don't worry if 
 
 - [Lecture Notes](week1/PUBLG088_week1.pdf)
 - [Assignment 1 as R markdown](week1/PUBLG088_assignment1_LASTNAME_FIRSTNAME.Rmd)
-- Assignment 1 **solution** as [R markdown]<!--(week1/PUBLG088_assignment1_solution.Rmd)-->
+- Assignment 1 **solution** as [R markdown](week1/PUBLG088_assignment1_solution.Rmd)
 
 #### October 13: Review of probability and basic statistical foundations  
 
 - [Lecture Notes](week2/PUBLG088_week2.pdf)
-- [Assignment 2 as R markdown]<!--  (week2/PUBLG088_assignment2_LASTNAME_FIRSTNAME.Rmd) -->
-- Assignment 2 **solution** as [R markdown]<!--(week2/PUBLG088_assignment2_solution.Rmd)-->
+- [Assignment 2 as R markdown]
+- Assignment 2 **solution** as [R markdown]
 
 #### October 20: Linear Regression 
 
-- [Lecture Notes]<!--(week3/PUBLG088_week3.pdf)-->
-- [Assignment 3 as R markdown]<!--(week3/PUBLG088_assignment3_LASTNAME_FIRSTNAME.Rmd)-->
-- Assignment 3 **solution** as [R markdown]<!--(week3/PUBLG088_assignment3_solution.Rmd)-->
+- [Lecture Notes]
+- [Assignment 3 as R markdown]
+- Assignment 3 **solution** as [R markdown]
 
 #### October 27: Classification 
 
-- [Lecture Notes]<!--(week4/PUBLG088_week4.pdf)-->
-- [Assignment 4 as R markdown]<!--(week4/PUBLG088_assignment4_LASTNAME_FIRSTNAME.Rmd)-->
-- Assignment 4 **solution** as [R markdown]<!--(week4/PUBLG088_assignment4_solution.Rmd)-->
+- [Lecture Notes]
+- [Assignment 4 as R markdown]
+- Assignment 4 **solution** as [R markdown]
 
 #### November 3: Resampling Methods
 
-- [Lecture Notes]<!--(week5/PUBLG088_week5.pdf)-->
-- [Assignment 5 as R markdown]<!--(week5/PUBLG088_assignment5_LASTNAME_FIRSTNAME.Rmd)-->
-- Assignment 5 **solution** as [R markdown]<!--(week5/PUBLG088_assignment5_solution.Rmd)-->
+- [Lecture Notes]
+- [Assignment 5 as R markdown]
+- Assignment 5 **solution** as [R markdown]
 - Replication assignment: In addition to Assignment 5 you will work in small groups on a replication assignment. This assignment simulates your final research paper for the course (except that you work on this assignment in small groups rather than individually). You will present your results in the seminar on November 17th.
 
 #### November 17: Model selection and regularization
 
-- [Lecture Notes]<!--(week6/PUBLG088_week6.pdf)-->
-- [Assignment 6 as R markdown]<!--(week6/PUBLG088_assignment6_LASTNAME_FIRSTNAME.Rmd)-->
-- Assignment 6 **solution** as [R markdown]<!--(week6/PUBLG088_assignment6_solution.Rmd)-->
+- [Lecture Notes]
+- [Assignment 6 as R markdown]
+- Assignment 6 **solution** as [R markdown]
 
 #### November 24: Non-linear models
 
-- [Lecture Notes]<!--(week7/PUBLG088_week7.pdf)-->
-- [Assignment 7 as R markdown]<!--(week7/PUBLG088_assignment7_LASTNAME_FIRSTNAME.Rmd)-->
-- Assignment 7 **solution** as [R markdown]<!--(week7/PUBLG088_assignment7_solution.Rmd)-->
+- [Lecture Notes]
+- [Assignment 7 as R markdown]
+- Assignment 7 **solution** as [R markdown]
 
 #### December 1: Tree-based methods
 
-- [Lecture Notes]<!--(week8/PUBLG088_week8.pdf)-->
-- [Assignment 8 as R markdown]<!--(week8/PUBLG088_assignment8_LASTNAME_FIRSTNAME.Rmd)-->
-- Assignment 8 **solution** as [R markdown]<!--(week8/PUBLG088_assignment8_solution.Rmd)-->
+- [Lecture Notes]
+- [Assignment 8 as R markdown]
+- Assignment 8 **solution** as [R markdown]
 
 #### December 8: Unsupervised learning and dimensional reduction
 
-- [Lecture Notes]<!--(week9/PUBLG088_week9.pdf)-->
-- [Assignment 9 as R markdown]<!--(week9/PUBLG088_assignment9_LASTNAME_FIRSTNAME.Rmd)-->
-- Assignment 9 **solution** as [R markdown]<!--(week9/PUBLG088_assignment9_solution.Rmd)-->
+- [Lecture Notes]
+- [Assignment 9 as R markdown]
+- Assignment 9 **solution** as [R markdown]
 
 #### December 15: Unstructured data analysis
 
-- [Lecture Notes]<!--(week10/PUBLG088_week10.pdf)-->
-- [Assignment 10 as R markdown]<!--(week10/PUBLG088_assignment10_LASTNAME_FIRSTNAME.Rmd)-->
-- Assignment 10 **solution** as [R markdown]<!--(week10/PUBLG088_assignment10_solution.Rmd)-->  Note: This is a take-home assignment only, in the lab we'll be discussing your 2-page proposals for the final research paper. 
+- [Lecture Notes]
+- [Assignment 10 as R markdown]
+- Assignment 10 **solution** as [R markdown] Note: This is a take-home assignment only, in the lab we'll be discussing your 2-page proposals for the final research paper. 
 
 #### Research paper: 
 
