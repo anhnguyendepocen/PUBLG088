@@ -54,11 +54,10 @@ We will walk you through this process in the first two weeks, so don't worry if 
 
 - [Lecture Notes](week1/PUBLG088_week1.pdf)
 - [Assignment 1 as R markdown](week1/PUBLG088_assignment1_LASTNAME_FIRSTNAME.Rmd)
-- Assignment 1 **solution** as [R markdown](week1/PUBLG088_assignment1_solution.Rmd)
 
 #### October 13: Introduction to statistical learning  
 
-- [Lecture Notes](week2/PUBLG088_week2.pdf)
+- [Lecture Notes]
 - [Assignment 2 as R markdown]
 - Assignment 2 **solution** as [R markdown]
 
