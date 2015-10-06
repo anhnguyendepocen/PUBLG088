@@ -53,7 +53,7 @@ We will walk you through this process in the first two weeks, so don't worry if 
 #### October 6: Overview and review of probability and statistics
 
 - [Lecture Notes](week1/PUBLG088_week1.pdf)
-- [Assignment 1 as R markdown](week1/PUBLG088_assignment1_LASTNAME_FIRSTNAME.Rmd)
+- [Assignment 1](week1/PUBLG088_assignment1_LASTNAME_FIRSTNAME.Rmd)
 
 #### October 13: Introduction to statistical learning  
 
