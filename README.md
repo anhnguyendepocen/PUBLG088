@@ -54,6 +54,7 @@ We will walk you through this process in the first two weeks, so don't worry if 
 
 - [Lecture Notes](week1/PUBLG088_week1.pdf)
 - [Seminar 1 Intro to R](https://uclspp.github.io/PUBLG100/week1/seminar1.html)
+- [Data Camp R tutorials](https://www.datacamp.com/courses/free-introduction-to-r)
 
 #### October 13: Introduction to statistical learning  
 
