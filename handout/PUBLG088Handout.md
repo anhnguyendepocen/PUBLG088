@@ -232,14 +232,17 @@ each topic, so we may not get to all the topics listed below.
 
 Date & Topic & Details & Readings\
 
-Oct 6 & Course overview and introduction & We will use this session to
-get to know the range of interests and experience students bring to the
-class, as well as to survey the approaches to be covered. We will also
-discuss and demonstrate the R software. & James et al. Chapters 1-2.\
+Oct 6 & Course overview and review of probability and statistics & We
+will use this session to get to know the range of interests and
+experience students bring to the class, as well as to survey the
+approaches to be covered. We will also review basic probability and
+statistics and demonstrate the R software. & James et al. Chapter 1;
+Stock&Watson Chapters 2-3.\
 
-Oct 13 &Review of probability and basic statistical foundations & Basic
-probability and statistics, binomial and Normal distributions,
-resampling, bootstrapping. & Stock&Watson Chapters 2-3.\
+Oct 13 & Introduction to statistical learning & Statistical learning,
+supervised vs unsupervised learning, regression vs classification,
+prediction vs inference. We will also discuss and demonstrate R
+Markdown. & James et al. Chapter 2.\
 
 Oct 20 & Linear regression & The basic linear regression model, with a
 focus on prediction. & James et al. Chapter 3.\

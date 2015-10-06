@@ -50,13 +50,13 @@ We will walk you through this process in the first two weeks, so don't worry if 
 
 ### Resources for each day ###
 
-#### October 6: Overview and introduction to data science
+#### October 6: Overview and review of probability and statistics
 
 - [Lecture Notes](week1/PUBLG088_week1.pdf)
 - [Assignment 1 as R markdown](week1/PUBLG088_assignment1_LASTNAME_FIRSTNAME.Rmd)
 - Assignment 1 **solution** as [R markdown](week1/PUBLG088_assignment1_solution.Rmd)
 
-#### October 13: Review of probability and basic statistical foundations  
+#### October 13: Introduction to statistical learning  
 
 - [Lecture Notes](week2/PUBLG088_week2.pdf)
 - [Assignment 2 as R markdown]
