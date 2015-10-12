@@ -58,9 +58,10 @@ We will walk you through this process in the first two weeks, so don't worry if 
 
 #### October 13: Introduction to statistical learning  
 
-- [Lecture Notes]
-- [Assignment 2 as R markdown]
-- Assignment 2 **solution** as [R markdown]
+- [Lecture Notes](week2/PUBLG088_week2.pdf)
+- [Lab 2](week2/PUBLG088_lab2.Rmd)
+- [Assignment 2 as R markdown](week2/PUBLG088_assignment2_LASTNAME_FIRSTNAME.Rmd)
+- Assignment 2 **solution** as [R markdown](week2/PUBLG088_assignment2_solution.Rmd)
 
 #### October 20: Linear Regression 
 
