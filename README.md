@@ -61,56 +61,64 @@ We will walk you through this process in the first two weeks, so don't worry if 
 - [Lecture Notes](week2/PUBLG088_week2.pdf)
 - [Lab 2](week2/PUBLG088_lab2.Rmd)
 - [Assignment 2 as R markdown](week2/PUBLG088_assignment2_LASTNAME_FIRSTNAME.Rmd)
-- Assignment 2 **solution** as [R markdown](week2/PUBLG088_assignment2_solution.Rmd)
+- Assignment 2 **solution** as [R markdown](week2/PUBLG088_assignment2_solution.Rmd) or [html]
 
 #### October 20: Linear Regression 
 
 - [Lecture Notes]
+- [Lab 2]
 - [Assignment 3 as R markdown]
-- Assignment 3 **solution** as [R markdown]
+- Assignment 3 **solution** as [R markdown] or [html]
 
 #### October 27: Classification 
 
 - [Lecture Notes]
+- [Lab 2]
 - [Assignment 4 as R markdown]
-- Assignment 4 **solution** as [R markdown]
+- Assignment 4 **solution** as [R markdown] or [html]
 
 #### November 3: Resampling Methods
 
 - [Lecture Notes]
+- [Lab 2]
 - [Assignment 5 as R markdown]
-- Assignment 5 **solution** as [R markdown]
+- Assignment 5 **solution** as [R markdown] or [html]
 - Replication assignment: In addition to Assignment 5 you will work in small groups on a replication assignment. This assignment simulates your final research paper for the course (except that you work on this assignment in small groups rather than individually). You will present your results in the seminar on November 17th.
 
 #### November 17: Model selection and regularization
 
 - [Lecture Notes]
+- [Lab 2]
 - [Assignment 6 as R markdown]
-- Assignment 6 **solution** as [R markdown]
+- Assignment 6 **solution** as [R markdown] or [html]
 
 #### November 24: Non-linear models
 
 - [Lecture Notes]
+- [Lab 2]
 - [Assignment 7 as R markdown]
-- Assignment 7 **solution** as [R markdown]
+- Assignment 7 **solution** as [R markdown] or [html]
 
 #### December 1: Tree-based methods
 
 - [Lecture Notes]
+- [Lab 2]
 - [Assignment 8 as R markdown]
-- Assignment 8 **solution** as [R markdown]
+- Assignment 8 **solution** as [R markdown] or [html]
 
 #### December 8: Unsupervised learning and dimensional reduction
 
 - [Lecture Notes]
+- [Lab 2]
 - [Assignment 9 as R markdown]
-- Assignment 9 **solution** as [R markdown]
+- Assignment 9 **solution** as [R markdown] or [html]
 
 #### December 15: Unstructured data analysis
 
 - [Lecture Notes]
+- [Lab 2]
 - [Assignment 10 as R markdown]
-- Assignment 10 **solution** as [R markdown] Note: This is a take-home assignment only, in the lab we'll be discussing your 2-page proposals for the final research paper. 
+- Assignment 10 **solution** as [R markdown] or [html]. Note: This is a take-home assignment only, in the lab we'll be discussing your 2-page proposals for the final research paper. 
 
 #### Research paper: 
 
