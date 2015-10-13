@@ -3,7 +3,7 @@
 
 [Slava Mikhaylov](s.mikhaylov@ucl.ac.uk)
 
-**Version:** October 5, 2015
+**Version:** October 13, 2015
 
 This repository contains the class materials for the course *PUBLG088 Advanced Quantitative Methods* taught in Term 1 2015.  
 
@@ -62,6 +62,8 @@ We will walk you through this process in the first two weeks, so don't worry if 
 - [Lab 2](week2/PUBLG088_lab2.Rmd)
 - [Assignment 2 as R markdown](week2/PUBLG088_assignment2_LASTNAME_FIRSTNAME.Rmd)
 - Assignment 2 **solution** as [R markdown](week2/PUBLG088_assignment2_solution.Rmd) or [html]
+- [Data Camp RMarkdown tutorial](http://bit.ly/R_markdown)
+
 
 #### October 20: Linear Regression 
 
