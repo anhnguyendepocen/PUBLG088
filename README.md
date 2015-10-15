@@ -61,7 +61,7 @@ We will walk you through this process in the first two weeks, so don't worry if 
 - [Lecture Notes](week2/PUBLG088_week2.pdf)
 - [Lab 2](week2/PUBLG088_lab2.Rmd)
 - [Assignment 2 as R markdown](week2/PUBLG088_assignment2_LASTNAME_FIRSTNAME.Rmd)
-- Assignment 2 **solution** as [R markdown](week2/PUBLG088_assignment2_solution.Rmd) or [html]
+- Assignment 2 **solution** as [R markdown](week2/PUBLG088_assignment2_solution.Rmd) or [html](week2/PUBLG088_assignment2_solution.html)
 - [Data Camp RMarkdown tutorial](http://bit.ly/R_markdown)
 
 
