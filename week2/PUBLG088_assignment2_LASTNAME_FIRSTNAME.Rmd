@@ -40,17 +40,17 @@ Before reading the data into R, it can be viewed in Excel or a text editor, if y
 college <- read.csv("http://www-bcf.usc.edu/~gareth/ISL/College.csv")
 ```
 
-(b) Look at the data using the `fix()` function. You should notice that the first column is just the name of each university. We don't really want `R` to treat this as data. However, it may be handy to have these names for later. Try the following commands:
+(b) Look at the data using the `View()` function. You should notice that the first column is just the name of each university. We don't really want `R` to treat this as data. However, it may be handy to have these names for later. Try the following commands:
 ```{r, eval=FALSE}
 rownames(college) <- college[, 1] 
-fix(college)
+View(college)
 ```
 
 You should see that there is now a `row.names` column with the name of each university recorded. This means that `R` has given each row a name corresponding to the appropriate university. `R` will not try to perform calculations on the row names. However, we still need to eliminate the first column in the data where the names are stored. Try
 
 ```{r, eval=FALSE}
 college <- college[, -1] 
-fix(college)
+View(college)
 ```
 
 Now you should see that the first data column is `Private`. Note that another column labeled `row.names` now appears before the `Private` column. However, this is not a data column but rather the name that `R` is giving to each row.
