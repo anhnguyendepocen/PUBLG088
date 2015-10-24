@@ -70,7 +70,7 @@ We will walk you through this process in the first two weeks, so don't worry if 
 - [Lecture Notes](week3/PUBLG088_week3.pdf)
 - [Lab 3](week3/PUBLG088_lab3.Rmd)
 - [Assignment 3 as R markdown](week3/PUBLG088_assignment3_LASTNAME_FIRSTNAME.Rmd)
-- Assignment 3 **solution** as [R markdown]
+- Assignment 3 **solution** as [R markdown](week3/PUBLG088_assignment3_solution.Rmd)
 
 #### October 27: Classification 
 
