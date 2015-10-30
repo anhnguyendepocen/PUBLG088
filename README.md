@@ -77,7 +77,7 @@ We will walk you through this process in the first two weeks, so don't worry if 
 - [Lecture Notes](week4/PUBLG088_week4.pdf)
 - [Lab 4](week4/PUBLG088_lab4.Rmd)
 - [Assignment 4 as R markdown](week4/PUBLG088_assignment4_LASTNAME_FIRSTNAME.Rmd)
-- Assignment 4 **solution** as [R markdown]
+- Assignment 4 **solution** as [R markdown](week4/PUBLG088_assignment4_solution.Rmd)
 
 #### November 3: Resampling Methods
 
