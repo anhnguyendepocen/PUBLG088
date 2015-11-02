@@ -81,9 +81,9 @@ We will walk you through this process in the first two weeks, so don't worry if 
 
 #### November 3: Resampling Methods
 
-- [Lecture Notes]
-- [Lab 5]
-- [Assignment 5 as R markdown]
+- [Lecture Notes](week5/PUBLG088_week5.pdf)
+- [Lab 5](week5/PUBLG088_lab5.Rmd)
+- [Assignment 5 as R markdown](week5/PUBLG088_assignment5_LASTNAME_FIRSTNAME.Rmd)
 - Assignment 5 **solution** as [R markdown]
 - Replication assignment: In addition to Assignment 5 you will work in small groups on a replication assignment. This assignment simulates your final research paper for the course (except that you work on this assignment in small groups rather than individually). You will present your results in the seminar on November 17th.
 
