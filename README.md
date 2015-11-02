@@ -34,17 +34,13 @@ You can also subscribe to the repository if you have a [GitHub account](https://
 
 Each homework will be a single file in the [RMarkdown](http://bit.ly/R_markdown) format.  The files linked below are *named very carefully*, to make it easy for us to identify your completed lab assignments.  
 
-1.  Obtaining the starter files.  
+  (1). *Obtaining the starter files.* Each week below will link the name of a starter file for you to download and work with.  These are in the RMarkdown format.  You should embed your answers, with code, into your version of the instruction files.
 
-Each week below will link the name of a starter file for you to download and work with.  These are in the RMarkdown format.  You should embed your answers, with code, into your version of the instruction files.
-
-2.  Renaming the starter files.  
+  (2). *Renaming the starter files.* For example, the first assignment file is named `PUBLG088_assignment1_LASTNAME_FIRSTNAME.Rmd`, which you will need to rename by replacing the uppercase terms with your own last and first names, e.g.  `PUBLG088_assignment1_Joe_Smith.Rmd`.
     
-For example, the first assignment file is named `PUBLG088_assignment1_LASTNAME_FIRSTNAME.Rmd`, which you will need to rename by replacing the uppercase terms with your own last and first names, e.g.  `PUBLG088_assignment1_Joe_Smith.Rmd`.
-    
-3.  From RStudio, you can create an HTML outfile file with your evaluated code, figure, and text answers by clicking the "Knit HTML" button in the top of the editor pane in RStudio.  The resulting HTML file will be saved in your working directory.
+  (3). From RStudio, you can create an HTML outfile file with your evaluated code, figure, and text answers by clicking the "Knit HTML" button in the top of the editor pane in RStudio.  The resulting HTML file will be saved in your working directory.
 
-4.  You will need to upload the resulting HTML file -- renamed! -- to the [course Moodle page](https://moodle.ucl.ac.uk/course/view.php?id=14161), to the Assignments folder.  
+  (4).  You will need to upload the resulting HTML file -- renamed! -- to the [course Moodle page](https://moodle.ucl.ac.uk/course/view.php?id=14161), to the Assignments folder.  
 
 We will walk you through this process in the first two weeks, so don't worry if it seems complicated the first time.  This sort of careful workflow process and file management is part of learning practical data science too!
 
