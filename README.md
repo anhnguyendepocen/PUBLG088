@@ -85,9 +85,9 @@ We will walk you through this process in the first two weeks, so don't worry if 
 
 #### November 17: Model selection and regularization
 
-- [Lecture Notes]
-- [Lab 6]
-- [Assignment 6 as R markdown]
+- [Lecture Notes](week6/PUBLG088_week6.pdf)
+- [Lab 6](week6/PUBLG088_lab6.Rmd)
+- [Assignment 6 as R markdown](week6/PUBLG088_assignment6_LASTNAME_FIRSTNAME.Rmd)
 - Assignment 6 **solution** as [R markdown]
 
 #### November 24: Non-linear models

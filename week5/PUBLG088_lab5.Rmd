@@ -1,5 +1,5 @@
 ---
-title: "PUBLG088 Lab 4: Cross-Validation and the Bootstrap"
+title: "PUBLG088 Lab 5: Cross-Validation and the Bootstrap"
 author: "Slava Mikhaylov"
 output: html_document
 ---
