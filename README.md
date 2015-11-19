@@ -88,7 +88,7 @@ We will walk you through this process in the first two weeks, so don't worry if 
 - [Lecture Notes](week6/PUBLG088_week6.pdf)
 - [Lab 6](week6/PUBLG088_lab6.Rmd)
 - [Assignment 6 as R markdown](week6/PUBLG088_assignment6_LASTNAME_FIRSTNAME.Rmd)
-- Assignment 6 **solution** as [R markdown]
+- Assignment 6 **solution** as [R markdown](week6/PUBLG088_assignment6_solution.Rmd)
 
 #### November 24: Non-linear models
 
