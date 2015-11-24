@@ -92,9 +92,9 @@ We will walk you through this process in the first two weeks, so don't worry if 
 
 #### November 24: Non-linear models
 
-- [Lecture Notes]
-- [Lab 7]
-- [Assignment 7 as R markdown]
+- [Lecture Notes](week7/PUBLG088_week7.pdf)
+- [Lab 7](week7/PUBLG088_lab7.Rmd)
+- [Assignment 7 as R markdown](week7/PUBLG088_assignment7_LASTNAME_FIRSTNAME.Rmd)
 - Assignment 7 **solution** as [R markdown]
 
 #### December 1: Tree-based methods
