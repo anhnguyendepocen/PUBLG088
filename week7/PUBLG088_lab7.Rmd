@@ -52,6 +52,18 @@ preds <- predict(fit, newdata = list(age = age.grid), se = TRUE)
 se.bands <- cbind(preds$fit + 2 * preds$se.fit, preds$fit - 2 * preds$se.fit)
 ```
 
+We can plot the data and add the fit from the degree-4 polynomial.
+
+```{r}
+par(mfrow = c(1, 2), mar = c(4.5, 4.5, 1, 1), oma = c(0, 0, 4, 0))
+plot(age, wage, xlim = agelims, cex = 0.5, col = "darkgrey")
+title("Degree -4 Polynomial ", outer = TRUE)
+lines(age.grid, preds$fit, lwd = 2, col = "blue")
+matlines(age.grid, se.bands, lwd = 1, col = "blue", lty = 3)
+```
+
+Comparing orthogonolized fit with regular fit.
+
 ```{r}
 preds2 <- predict(fit2, newdata = list(age = age.grid), se = TRUE)
 max(abs(preds$fit - preds2$fit))
@@ -110,12 +122,6 @@ preds <- predict(fit, newdata = list(age = age.grid), type = "response", se = TR
 We can plot these results with the [`plot()`](http://bit.ly/R_plot) function as usual.
 
 ```{r}
-par(mfrow = c(1, 2), mar = c(4.5, 4.5, 1, 1), oma = c(0, 0, 4, 0))
-plot(age, wage, xlim = agelims, cex = 0.5, col = "darkgrey")
-title("Degree -4 Polynomial ", outer = TRUE)
-lines(age.grid, preds$fit, lwd = 2, col = "blue")
-matlines(age.grid, se.bands, lwd = 1, col = "blue", lty = 3)
-
 plot(age, I(wage > 250), xlim = agelims, type = "n", ylim = c(0, 0.2))
 points(jitter(age), I((wage > 250)/5), cex = 0.5, pch = "|", col = " darkgrey ")
 lines(age.grid, pfit, lwd = 2, col = "blue")
