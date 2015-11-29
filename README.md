@@ -95,7 +95,7 @@ We will walk you through this process in the first two weeks, so don't worry if 
 - [Lecture Notes](week7/PUBLG088_week7.pdf)
 - [Lab 7](week7/PUBLG088_lab7.Rmd)
 - [Assignment 7 as R markdown](week7/PUBLG088_assignment7_LASTNAME_FIRSTNAME.Rmd)
-- Assignment 7 **solution** as [R markdown]
+- Assignment 7 **solution** as [R markdown](week7/PUBLG088_assignment7_solution.Rmd)
 
 #### December 1: Tree-based methods
 
