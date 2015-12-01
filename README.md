@@ -99,9 +99,9 @@ We will walk you through this process in the first two weeks, so don't worry if 
 
 #### December 1: Tree-based methods
 
-- [Lecture Notes]
-- [Lab 8]
-- [Assignment 8 as R markdown]
+- [Lecture Notes](week8/PUBLG088_week8.pdf)
+- [Lab 8](week8/PUBLG088_lab8.Rmd)
+- [Assignment 8 as R markdown](week8/PUBLG088_assignment8_LASTNAME_FIRSTNAME.Rmd)
 - Assignment 8 **solution** as [R markdown]
 
 #### December 8: Unsupervised learning and dimensional reduction
