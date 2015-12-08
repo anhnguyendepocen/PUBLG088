@@ -106,9 +106,9 @@ We will walk you through this process in the first two weeks, so don't worry if 
 
 #### December 8: Unsupervised learning and dimensional reduction
 
-- [Lecture Notes]
-- [Lab 9]
-- [Assignment 9 as R markdown]
+- [Lecture Notes](week9/PUBLG088_week9.pdf)
+- [Lab 9](week9/PUBLG088_lab9.Rmd)
+- [Assignment 9 as R markdown](week9/PUBLG088_assignment9_LASTNAME_FIRSTNAME.Rmd)
 - Assignment 9 **solution** as [R markdown]
 
 #### December 15: Unstructured data analysis
