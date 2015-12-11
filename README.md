@@ -25,7 +25,7 @@ You can also subscribe to the repository if you have a [GitHub account](https://
 
 ### Office Hours ###
 
-- Tuesdays 15:00-17:00, Room 2.01, 29/30 Tavistock Square (SPP building).
+- Monday 15:00-17:00, Room 2.01, 29/30 Tavistock Square (SPP building).
 - Use the link on course Moodle page to sign up for office hours (under Tutor Information block).
 
 
