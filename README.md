@@ -22,7 +22,6 @@ You can also subscribe to the repository if you have a [GitHub account](https://
 ### Full course details ###
 
 - Detailed course handout in [pdf format](handout/PUBLG088Handout.pdf)
-- Detailed course handout in [markdown/html](handout/PUBLG088Handout.md)
 
 ### Office Hours ###
 
