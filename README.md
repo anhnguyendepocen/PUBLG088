@@ -109,7 +109,7 @@ We will walk you through this process in the first two weeks, so don't worry if 
 - [Lecture Notes](week9/PUBLG088_week9.pdf)
 - [Lab 9](week9/PUBLG088_lab9.Rmd)
 - [Assignment 9 as R markdown](week9/PUBLG088_assignment9_LASTNAME_FIRSTNAME.Rmd)
-- Assignment 9 **solution** as [R markdown]
+- Assignment 9 **solution** as [R markdown](week9/PUBLG088_assignment9_solution.Rmd)
 
 #### December 15: Unstructured data analysis
 

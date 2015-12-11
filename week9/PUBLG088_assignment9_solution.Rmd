@@ -1,0 +1,162 @@
+---
+title: "Assignment 9 - Unsupervised Learning"
+author: "Slava Mikhaylov"
+output: html_document
+---
+
+Assignments for the course focus on practical aspects of the concepts covered in the lectures. Assignments are based on the material covered in James et al. You will start working on the assignment in the lab sessions after the lectures, but may need to finish them after class.
+
+You will have two days to work on the assignments, submitting them via Moodle by 7pm on Thursday. We will subsequently open up solutions to the problem sets. 
+
+### Exercise 9.1
+
+Consider the `USArrests` data. We will now perform hierarchical clustering on the states.
+
+```{r}
+library(ISLR)
+set.seed(2)
+```
+
+(a) Using hierarchical clustering with complete linkage and Euclidean distance, cluster the states.
+
+```{r}
+hc.complete <-  hclust(dist(USArrests), method="complete")
+plot(hc.complete)
+```
+
+(b) Cut the dendrogram at a height that results in three distinct clusters. Which states belong to which clusters?
+
+```{r}
+cutree(hc.complete, 3)
+table(cutree(hc.complete, 3))
+```
+
+(c) Hierarchically cluster the states using complete linkage and Euclidean distance, after scaling the variables to have standard deviation one.
+
+```{r}
+dsc <-  scale(USArrests)
+hc.s.complete <-  hclust(dist(dsc), method="complete")
+plot(hc.s.complete)
+```
+
+(d) What effect does scaling the variables have on the hierarchical clustering obtained? In your opinion, should the variables be scaled before the inter-observation dissimilarities are computed? Provide a justification for your answer.
+
+```{r}
+cutree(hc.s.complete, 3)
+table(cutree(hc.s.complete, 3))
+table(cutree(hc.s.complete, 3), cutree(hc.complete, 3))
+```
+
+**Scaling the variables effects the max height of the dendogram obtained from hierarchical clustering. From a cursory glance, it doesn't effect the bushiness of the tree obtained. However, it does affect the clusters obtained from cutting the dendogram into 3 clusters. In my opinion, for this data set the data should be standardized because the data measured has different units ($UrbanPop$ compared to other three columns).**
+
+### Exercise 9.2
+
+In this problem, you will generate simulated data, and then perform PCA and K-means clustering on the data.
+
+(a) Generate a simulated data set with 20 observations in each of three classes (i.e. 60 observations total), and 50 variables.
+*Hint: There are a number of functions in `R` that you can use to generate data. One example is the `rnorm()` function; `runif()` is another option. Be sure to add a mean shift to the observations in each class so that there are three distinct classes.*
+
+```{r}
+set.seed(2)
+x <-  matrix(rnorm(20*3*50, mean=0, sd=0.001), ncol=50)
+x[1:20, 2] <-  1
+x[21:40, 1] <-  2
+x[21:40, 2] <-  2
+x[41:60, 1] <-  1
+```
+**The concept here is to separate the three classes amongst two dimensions.**
+
+(b) Perform PCA on the 60 observations and plot the first two principal component score vectors. Use a different color to indicate the observations in each of the three classes. If the three classes appear separated in this plot, then continue on to part (c). If not, then return to part (a) and modify the simulation so that there is greater separation between the three classes. Do not continue to part (c) until the three classes show at least some separation in the first two principal component score vectors.
+
+```{r}
+pca.out <-  prcomp(x)
+summary(pca.out)
+pca.out$x[,1:2]
+plot(pca.out$x[,1:2], col=2:4, 
+     xlab="Z1", ylab="Z2", pch=19) 
+```
+
+(c) Perform $K$-means clustering of the observations with $K = 3$. How well do the clusters that you obtained in $K$-means clustering compare to the true class labels?
+*Hint: You can use the `table()` function in `R` to compare the true class labels to the class labels obtained by clustering. Be careful how you interpret the results: $K$-means clustering will arbitrarily number the clusters, so you cannot simply check whether the true class labels and clustering labels are the same.*
+
+```{r}
+km.out <-  kmeans(x, 3, nstart=20)
+table(km.out$cluster, c(rep(1,20), rep(2,20), rep(3,20)))
+```
+
+**Perfect match.**
+
+(d) Perform $K$-means clustering with $K = 2$. Describe your results.
+
+```{r}
+km.out <-  kmeans(x, 2, nstart=20)
+km.out$cluster
+```
+
+**All of one previous class absorbed into a single class.**
+
+(e) Now perform $K$-means clustering with $K = 4$, and describe your
+results.
+
+```{r}
+km.out <-  kmeans(x, 4, nstart=20)
+km.out$cluster
+```
+
+**All of one previous cluster split into two clusters.**
+
+(f) Now perform $K$-means clustering with $K = 3$ on the first two principal component score vectors, rather than on the raw data. That is, perform $K$-means clustering on the $60 \times 2$ matrix of which the first column is the first principal component score vector, and the second column is the second principal component score vector. Comment on the results.
+
+```{r}
+km.out <-  kmeans(pca.out$x[,1:2], 3, nstart=20)
+table(km.out$cluster, c(rep(1,20), rep(2,20), rep(3,20)))
+```
+
+**Perfect match, once again.**
+
+(g) Using the `scale()` function, perform $K$-means clustering with $K = 3$ on the data after scaling each variable to have standard deviation one. How do these results compare to those obtained in (b)? Explain.
+
+```{r}
+km.out <-  kmeans(scale(x), 3, nstart=20)
+km.out$cluster
+```
+
+**Poorer results than (b): the scaling of the observations effects the distance between them.**
+
+### Exercise 9.3
+
+On the textbook website, www.StatLearning.com, there is a gene expression data set (`Ch10Ex11.csv`) that consists of 40 tissue samples with measurements on 1,000 genes. The first 20 samples are from healthy patients, while the second 20 are from a diseased group.
+
+(a) Load in the data using `read.csv()`. You will need to select `header=FALSE`.
+
+```{r}
+data <-  read.csv("http://www-bcf.usc.edu/~gareth/ISL/Ch10Ex11.csv", header=FALSE)
+dim(data)
+```
+
+(b) Apply hierarchical clustering to the samples using correlation-based distance, and plot the dendrogram. Do the genes separate the samples into the two groups? Do your results depend on the type of linkage used?
+
+```{r}
+dd <-  as.dist(1 - cor(data))
+plot(hclust(dd, method="complete"))
+plot(hclust(dd, method="single"))
+plot(hclust(dd, method="average"))
+```
+
+**Two or three groups depending on the linkage method.**
+
+(c) Your collaborator wants to know which genes differ the most across the two groups. Suggest a way to answer this question, and apply it here.
+
+**To look at which genes differ the most across the healthy patients and diseased patients, we could look at the loading vectors outputted from PCA to see which genes are used to describe the variance the most.**
+
+```{r}
+pr.out <-  prcomp(t(data))
+summary(pr.out)
+total_load <-  apply(pr.out$rotation, 1, sum)
+indices <-  order(abs(total_load), decreasing=TRUE)
+indices[1:10]
+total_load[indices[1:10]]
+```
+
+**This shows one representation of the top 1% of differing genes.** 
+
