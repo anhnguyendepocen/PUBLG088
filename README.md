@@ -112,10 +112,9 @@ We will walk you through this process in the first two weeks, so don't worry if 
 
 #### December 15: Unstructured data analysis
 
-- [Lecture Notes]
-- [Lab 10]
-- [Assignment 10 as R markdown]
-- Assignment 10 **solution** as [R markdown]. Note: This is a take-home assignment only, in the lab we'll be discussing your 2-page proposals for the final research paper. 
+- [Lecture Notes](week10/PUBLG088_week10.pdf)
+- [Lab 10](https://github.com/kbenoit/ITAUR)
+- Note: This is no take-home assignment this week. In the seminar we'll be discussing your 2-page proposals for the final research paper. 
 
 #### Research paper: 
 
