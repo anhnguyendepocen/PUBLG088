@@ -47,13 +47,11 @@ We will walk you through this process in the first two weeks, so don't worry if 
 
 #### October 6: Overview and review of probability and statistics
 
-- [Lecture Notes](week1/PUBLG088_week1.pdf)
 - [Seminar 1 Intro to R](https://uclspp.github.io/PUBLG100/week1/seminar1.html)
 - [Data Camp R tutorials](https://www.datacamp.com/courses/free-introduction-to-r)
 
 #### October 13: Introduction to statistical learning  
 
-- [Lecture Notes](week2/PUBLG088_week2.pdf)
 - [Lab 2](week2/PUBLG088_lab2.Rmd)
 - [Assignment 2 as R markdown](week2/PUBLG088_assignment2_LASTNAME_FIRSTNAME.Rmd)
 - Assignment 2 **solution** as [R markdown](week2/PUBLG088_assignment2_solution.Rmd)
@@ -62,21 +60,18 @@ We will walk you through this process in the first two weeks, so don't worry if 
 
 #### October 20: Linear Regression 
 
-- [Lecture Notes](week3/PUBLG088_week3.pdf)
 - [Lab 3](week3/PUBLG088_lab3.Rmd)
 - [Assignment 3 as R markdown](week3/PUBLG088_assignment3_LASTNAME_FIRSTNAME.Rmd)
 - Assignment 3 **solution** as [R markdown](week3/PUBLG088_assignment3_solution.Rmd)
 
 #### October 27: Classification 
 
-- [Lecture Notes](week4/PUBLG088_week4.pdf)
 - [Lab 4](week4/PUBLG088_lab4.Rmd)
 - [Assignment 4 as R markdown](week4/PUBLG088_assignment4_LASTNAME_FIRSTNAME.Rmd)
 - Assignment 4 **solution** as [R markdown](week4/PUBLG088_assignment4_solution.Rmd)
 
 #### November 3: Resampling Methods
 
-- [Lecture Notes](week5/PUBLG088_week5.pdf)
 - [Lab 5](week5/PUBLG088_lab5.Rmd)
 - [Assignment 5 as R markdown](week5/PUBLG088_assignment5_LASTNAME_FIRSTNAME.Rmd)
 - Assignment 5 **solution** as [R markdown](week5/PUBLG088_assignment5_solution.Rmd)
@@ -84,35 +79,30 @@ We will walk you through this process in the first two weeks, so don't worry if 
 
 #### November 17: Model selection and regularization
 
-- [Lecture Notes](week6/PUBLG088_week6.pdf)
 - [Lab 6](week6/PUBLG088_lab6.Rmd)
 - [Assignment 6 as R markdown](week6/PUBLG088_assignment6_LASTNAME_FIRSTNAME.Rmd)
 - Assignment 6 **solution** as [R markdown](week6/PUBLG088_assignment6_solution.Rmd)
 
 #### November 24: Non-linear models
 
-- [Lecture Notes](week7/PUBLG088_week7.pdf)
 - [Lab 7](week7/PUBLG088_lab7.Rmd)
 - [Assignment 7 as R markdown](week7/PUBLG088_assignment7_LASTNAME_FIRSTNAME.Rmd)
 - Assignment 7 **solution** as [R markdown](week7/PUBLG088_assignment7_solution.Rmd)
 
 #### December 1: Tree-based methods
 
-- [Lecture Notes](week8/PUBLG088_week8.pdf)
 - [Lab 8](week8/PUBLG088_lab8.Rmd)
 - [Assignment 8 as R markdown](week8/PUBLG088_assignment8_LASTNAME_FIRSTNAME.Rmd)
 - Assignment 8 **solution** as [R markdown](week8/PUBLG088_assignment8_solution.Rmd)
 
 #### December 8: Unsupervised learning and dimensional reduction
 
-- [Lecture Notes](week9/PUBLG088_week9.pdf)
 - [Lab 9](week9/PUBLG088_lab9.Rmd)
 - [Assignment 9 as R markdown](week9/PUBLG088_assignment9_LASTNAME_FIRSTNAME.Rmd)
 - Assignment 9 **solution** as [R markdown](week9/PUBLG088_assignment9_solution.Rmd)
 
 #### December 15: Unstructured data analysis
 
-- [Lecture Notes](week10/PUBLG088_week10.pdf)
 - [Lab 10](https://github.com/kbenoit/ITAUR)
 - Note: This is no take-home assignment this week. In the seminar we'll be discussing your 2-page proposals for the final research paper. 
 
