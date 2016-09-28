@@ -3,9 +3,9 @@
 
 [Slava Mikhaylov](s.mikhaylov@ucl.ac.uk)
 
-**Version:** October 20, 2015
+**Version:** September 28, 2016
 
-This repository contains the class materials for the course *PUBLG088 Advanced Quantitative Methods* taught in Term 1 2015.  
+This repository contains the class materials for the course *PUBLG088 Advanced Quantitative Methods* taught in Term 1 2016.  
 
 ### Instructions for use ###
 
@@ -26,90 +26,56 @@ You can also subscribe to the repository if you have a [GitHub account](https://
 ### Office Hours ###
 
 - Monday 15:00-17:00, Room 2.01, 29/30 Tavistock Square (SPP building).
-- Use the link on course Moodle page to sign up for office hours (under Tutor Information block).
+- Use SPPBOOK link on course Moodle page to sign up for office hours (under Tutor Information block).
 
 
 ### Instructions for Submitting Homeworks ###
 
-Each homework will be a single file in the [RMarkdown](http://bit.ly/R_markdown) format.  The files linked below are *named very carefully*, to make it easy for us to identify your completed lab assignments.  
+Each homework will be submitted as a knitted HTML file. File name should contain week and name of the author. E.g. `week1_John_Snow.html`. You will need to upload the HTML file to the [course Moodle page](https://moodle.ucl.ac.uk/course/view.php?id=14161), to the Assignments folder.  
 
-1.  *Obtaining the starter files.* Each week below will link the name of a starter file for you to download and work with.  These are in the RMarkdown format.  You should embed your answers, with code, into your version of the instruction files.
-
-2.  *Renaming the starter files.* For example, the first assignment file is named `PUBLG088_assignment1_LASTNAME_FIRSTNAME.Rmd`, which you will need to rename by replacing the uppercase terms with your own last and first names, e.g.  `PUBLG088_assignment1_Joe_Smith.Rmd`.
-    
-3.  From RStudio, you can create an HTML outfile file with your evaluated code, figure, and text answers by clicking the "Knit HTML" button in the top of the editor pane in RStudio.  The resulting HTML file will be saved in your working directory.
-
-4.  You will need to upload the resulting HTML file -- renamed! -- to the [course Moodle page](https://moodle.ucl.ac.uk/course/view.php?id=14161), to the Assignments folder.  
-
-We will walk you through this process in the first two weeks, so don't worry if it seems complicated the first time.  This sort of careful workflow process and file management is part of learning practical data science too!
+We will walk you through this process in the first two weeks, so don't worry if it seems complicated the first time. This sort of careful workflow process and file management is part of learning practical data science too!
 
 ### Resources for each day ###
 
-#### October 6: Overview and review of probability and statistics
+#### October 4: Course overview and introduction to statistical learning
 
-- [Seminar 1 Intro to R](https://uclspp.github.io/PUBLG100/week1/seminar1.html)
+- [Lecture Notes](week1/PUBLG088_week1.pdf)
 - [Data Camp R tutorials](https://www.datacamp.com/courses/free-introduction-to-r)
-
-#### October 13: Introduction to statistical learning  
-
-- [Lab 2](week2/PUBLG088_lab2.Rmd)
-- [Assignment 2 as R markdown](week2/PUBLG088_assignment2_LASTNAME_FIRSTNAME.Rmd)
-- Assignment 2 **solution** as [R markdown](week2/PUBLG088_assignment2_solution.Rmd)
 - [Data Camp RMarkdown tutorial](http://bit.ly/R_markdown)
+- [Assignment 1](week1/Week1_LASTNAME_FIRSTNAME.Rmd)
 
 
-#### October 20: Linear Regression 
+#### October 11: Linear regression  
 
-- [Lab 3](week3/PUBLG088_lab3.Rmd)
-- [Assignment 3 as R markdown](week3/PUBLG088_assignment3_LASTNAME_FIRSTNAME.Rmd)
-- Assignment 3 **solution** as [R markdown](week3/PUBLG088_assignment3_solution.Rmd)
 
-#### October 27: Classification 
 
-- [Lab 4](week4/PUBLG088_lab4.Rmd)
-- [Assignment 4 as R markdown](week4/PUBLG088_assignment4_LASTNAME_FIRSTNAME.Rmd)
-- Assignment 4 **solution** as [R markdown](week4/PUBLG088_assignment4_solution.Rmd)
+#### October 18: Classification 
 
-#### November 3: Resampling Methods
 
-- [Lab 5](week5/PUBLG088_lab5.Rmd)
-- [Assignment 5 as R markdown](week5/PUBLG088_assignment5_LASTNAME_FIRSTNAME.Rmd)
-- Assignment 5 **solution** as [R markdown](week5/PUBLG088_assignment5_solution.Rmd)
-- Replication assignment: In addition to Assignment 5 you will work in small groups on a replication assignment. This assignment simulates your final research paper for the course (except that you work on this assignment in small groups rather than individually). You will present your results in the seminar on November 17th.
+#### October 25: Resampling Methods and Model Selection and Regularization 
 
-#### November 17: Model selection and regularization
 
-- [Lab 6](week6/PUBLG088_lab6.Rmd)
-- [Assignment 6 as R markdown](week6/PUBLG088_assignment6_LASTNAME_FIRSTNAME.Rmd)
-- Assignment 6 **solution** as [R markdown](week6/PUBLG088_assignment6_solution.Rmd)
+#### November 1: Non-linear Models and Tree-based Methods
 
-#### November 24: Non-linear models
 
-- [Lab 7](week7/PUBLG088_lab7.Rmd)
-- [Assignment 7 as R markdown](week7/PUBLG088_assignment7_LASTNAME_FIRSTNAME.Rmd)
-- Assignment 7 **solution** as [R markdown](week7/PUBLG088_assignment7_solution.Rmd)
+#### November 15: Neural Networks and Deep Learning
 
-#### December 1: Tree-based methods
 
-- [Lab 8](week8/PUBLG088_lab8.Rmd)
-- [Assignment 8 as R markdown](week8/PUBLG088_assignment8_LASTNAME_FIRSTNAME.Rmd)
-- Assignment 8 **solution** as [R markdown](week8/PUBLG088_assignment8_solution.Rmd)
+#### November 15: Support Vector Machines and Unsupervised Learning
 
-#### December 8: Unsupervised learning and dimensional reduction
 
-- [Lab 9](week9/PUBLG088_lab9.Rmd)
-- [Assignment 9 as R markdown](week9/PUBLG088_assignment9_LASTNAME_FIRSTNAME.Rmd)
-- Assignment 9 **solution** as [R markdown](week9/PUBLG088_assignment9_solution.Rmd)
+#### November 29: Vector Space Model
 
-#### December 15: Unstructured data analysis
 
-- [Lab 10](https://github.com/kbenoit/ITAUR)
-- Note: This is no take-home assignment this week. In the seminar we'll be discussing your 2-page proposals for the final research paper. 
+#### December 6: Word embedding models
+
+
+#### December 13: Topic models
+
 
 #### Research paper: 
 
-- **Instructions:**  The course uses online submission process. See Moodle and handout for more detail. Submit PDF output from RMarkdown using online submission process. 
+- **Instructions:**  The course uses online submission process. See Moodle and handout for more detail. Submit a *knitted* PDF. 
 - **Replication set:** In addition, submit your full replication set, including Rmd files to corresponding depository on Moodle. 
-- **Deadline:** 14 January 2016.
-- The research paper in R Markdown!
+- **Deadline:** 10 January 2017.
 

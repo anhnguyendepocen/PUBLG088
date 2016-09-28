@@ -1,15 +1,22 @@
 ---
-title: "Assignment 2 - Statistical Learning"
+title: "Assignment 1 - Statistical Learning"
 author: "Slava Mikhaylov"
 output: html_document
 ---
 
 Assignments for the course focus on practical aspects of the concepts covered in the lectures. Assignments are based on the material covered in James et al. You will start working on the assignment in the lab sessions after the lectures, but may need to finish them after class.
 
-You will have two days to work on the assignments, submitting them via Moodle by 7pm on Thursday. We will subsequently open up solutions to the problem sets. 
+You will have two days to work on the assignments, submitting knitted HTML files with your solutions via Moodle by 7pm on Thursday. We will subsequently open up our solutions to the problem sets. 
 
+### Exercise 1.0
 
-### Exercise 2.1
+If you haven't done it yet complete Data Camp tutorials:
+
+- [Data Camp R tutorials](https://www.datacamp.com/courses/free-introduction-to-r)
+- [Data Camp R Markdown tutorials](https://www.datacamp.com/courses/reporting-with-r-markdown). You can complete the free first chapter. 
+- After the tutorials complete introduction to R lab session in James et al. (Chapter 2.3). That will help you tackle following exercises:
+
+### Exercise 1.1
 
 This exercise relates to the `College` data set, which can be found in the file `College.csv` on the website for the main course textbook (James et al 2013) http://www-bcf.usc.edu/~gareth/ISL/data.html. It contains a number of variables for 777 different universities and colleges in the US.   
 
@@ -78,7 +85,7 @@ Use the `summary()` function to see how many elite universities there are. Now u
    vi. Continue exploring the data, and provide a brief summary of what you discover.
 
 
-### Exercise 2.2
+### Exercise 1.2
 
 This exercise involves the `Auto` data set available as `Auto.csv` from the website for the main course textbook James et al. http://www-bcf.usc.edu/~gareth/ISL/data.html. Make sure that the missing values have been removed from the data. You should load that dataset as the first step of the exercise. *Hint: We used the command for that in the Introduction to R session in class today. Go back and look up how to read in a csv file.*
 
@@ -90,7 +97,7 @@ This exercise involves the `Auto` data set available as `Auto.csv` from the webs
 (f) Suppose that we wish to predict gas mileage (`mpg`) on the basis of the other variables. Do your plots suggest that any of the other variables might be useful in predicting `mpg`? Justify your answer.
 
  
-### Exercise 2.3
+### Exercise 1.3
 
 This exercise involves the `Boston` housing data set.
 
