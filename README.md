@@ -43,7 +43,7 @@ We will walk you through this process in the first two weeks, so don't worry if 
 - [Data Camp R tutorials](https://www.datacamp.com/courses/free-introduction-to-r)
 - [Data Camp RMarkdown tutorial](http://bit.ly/R_markdown)
 - [Assignment 1](week1/Week1_LASTNAME_FIRSTNAME.Rmd)
-
+- [Solution 1](week1/Week1_assignment1_solution.Rmd)
 
 #### October 11: Linear regression  
 
