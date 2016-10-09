@@ -46,7 +46,9 @@ We will walk you through this process in the first two weeks, so don't worry if 
 - [Solution 1](week1/Week1_assignment1_solution.Rmd)
 
 #### October 11: Linear regression  
-
+- [Lecture Notes](week2/PUBLG088_week2.pdf)
+- [Assignment 2](week2/Week2_LASTNAME_FIRSTNAME.Rmd)
+- [Solution 2]()
 
 
 #### October 18: Classification 
