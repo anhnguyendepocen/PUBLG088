@@ -52,6 +52,9 @@ We will walk you through this process in the first two weeks, so don't worry if 
 
 
 #### October 18: Classification 
+- [Lecture Notes](week3/PUBLG088_week3.pdf)
+- [Assignment 2](week3/Week3_LASTNAME_FIRSTNAME.Rmd)
+- [Solution 2](week3/Week3_assignment3_solution.Rmd)
 
 
 #### October 25: Resampling Methods and Model Selection and Regularization 
