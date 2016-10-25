@@ -59,6 +59,10 @@ We will walk you through this process in the first two weeks, so don't worry if 
 
 #### October 25: Resampling Methods and Model Selection and Regularization 
 
+- [Lecture Notes](week4/PUBLG088_week4.pdf)
+- [Assignment 4](week4/Week4_LASTNAME_FIRSTNAME.Rmd)
+- [Solution 4](week4/Week4_assignment4_solution.Rmd)
+
 
 #### November 1: Non-linear Models and Tree-based Methods
 
