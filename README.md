@@ -66,6 +66,11 @@ We will walk you through this process in the first two weeks, so don't worry if 
 
 #### November 1: Non-linear Models and Tree-based Methods
 
+- [Lecture Notes](week5/PUBLG088_week5.pdf)
+- [Assignment 5](week5/Week5_LASTNAME_FIRSTNAME.Rmd)
+- [Solution 5](week5/Week5_assignment5_solution.Rmd)
+- [Datathon 1 task description](week5/Practice_Datathon1.Rmd) and Datathon [R presentation](week5/Datathon1.Rpres), World Development Indicators [data file](week5/WDI_Data.csv) and [variable descriptions](week5/WDI_Definition_and_Source.csv). 
+
 
 #### November 15: Neural Networks and Deep Learning
 

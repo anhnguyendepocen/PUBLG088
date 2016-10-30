@@ -1,0 +1,59 @@
+Datathon1
+========================================================
+author: Slava Mikhaylov (PUBLG088)
+date: 1 November 2016
+autosize: true
+
+Introduction
+========================================================
+
++ What social/policy question was asked or challenge addressed? Why is this question important or the challenge critical?
++ What datasets were used?
++ What is the novel contribution?
++ What is the key methodology or methodologies used?
++ What are the key findings?
+
+
+Previous Work
+========================================================
+
++ A couple relevant pieces of previous work on the topic of your research.
++ Use Google Scholar (<https://scholar.google.co.uk>) to find relevant previous work.
+
+Theoretical Framework
+========================================================
+
++ List the hypotheses that you're testing in this project.
++ No more than two hypotheses. 
++ You list H0, you don't need to list corresponding H1.
+
+Data description
+========================================================
+
++ You should provide summary statistics for your variables.
++ A visualization of main spatio-temporal trends in your variables. 
++ For visualization use _ggplot_ (<http://www.cookbook-r.com/Graphs/>).
+
+Methodology
+========================================================
+
++ This slide serves the purpose of detailing how you will go about testing the hypotheses laid out above.
++ Describe methods you use to test the relationship, operationalization of your variables (outcome variable, key predictors, and controls). 
++ If you're developing a prediction model, discuss how your prediction address hypotheses above.
+
+
+Results
+========================================================
+
++ Detail findings from most important to least. Begin, therefore, by discussing the results as they pertain to your hypotheses -- can you reject your hypotheses? How your results (e.g. from prediction model) can be validated?
++ You should present the findings in summary form -- a table of results or a graph. 
++ Use [_texreg_](https://cran.r-project.org/web/packages/texreg/index.html) (or [_stargazer_](https://cran.r-project.org/web/packages/stargazer/index.html), [_apsrtable_](https://cran.r-project.org/web/packages/apsrtable/index.html) or equivalent) to present results in tabular form. 
++ You can also use [_coefplot_](https://cran.r-project.org/web/packages/coefplot/index.html) style plots (or any other visualization of results).
+
+
+Conclusion and Discussion
+========================================================
+
++ Provide an interesting overview of the study. What have we learned? 
++ Next, discuss the limitations of your study, also what could be done to improve/build upon the study. You can demonstrate some self-criticism.
++ Finally and perhaps most importantly, discuss policy implications of your study.
