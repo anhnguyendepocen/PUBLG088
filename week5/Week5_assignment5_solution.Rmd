@@ -1,0 +1,272 @@
+---
+title: "Assignment 5 - Nonlinear Models and Tree-based Methods"
+author: "Slava Mikhaylov"
+output: html_document
+---
+
+### Exercise 5.1
+
+This question relates to the `College` dataset from the `ISLR` package.
+
+(a) Split the data into a training set and a test set. Using out-of-state tuition as the response and the other variables as the predictors, perform forward stepwise selection on the training set in order to identify a satisfactory model that uses just a subset of the predictors.
+
+```{r}
+set.seed(1)
+library(ISLR)
+library(leaps)
+attach(College)
+train <-  sample(length(Outstate), length(Outstate)/2)
+test <-  -train
+College.train <-  College[train, ]
+College.test <-  College[test, ]
+reg.fit <-  regsubsets(Outstate~., data=College.train, nvmax=17,
+                       method="forward")
+reg.summary <-  summary(reg.fit)
+par(mfrow=c(1, 3))
+plot(reg.summary$cp,xlab="Number of Variables",ylab="Cp",type='l')
+min.cp <-  min(reg.summary$cp)
+std.cp <-  sd(reg.summary$cp)
+abline(h=min.cp+0.2*std.cp, col="red", lty=2)
+abline(h=min.cp-0.2*std.cp, col="red", lty=2)
+plot(reg.summary$bic,xlab="Number of Variables",ylab="BIC",type='l')
+min.bic <-  min(reg.summary$bic)
+std.bic <-  sd(reg.summary$bic)
+abline(h=min.bic+0.2*std.bic, col="red", lty=2)
+abline(h=min.bic-0.2*std.bic, col="red", lty=2)
+plot(reg.summary$adjr2,xlab="Number of Variables",
+     ylab="Adjusted R2",type='l', ylim=c(0.4, 0.84))
+max.adjr2 <-  max(reg.summary$adjr2)
+std.adjr2 <-  sd(reg.summary$adjr2)
+abline(h=max.adjr2+0.2*std.adjr2, col="red", lty=2)
+abline(h=max.adjr2-0.2*std.adjr2, col="red", lty=2)
+```
+
+**All cp, BIC and adjr2 scores show that size 6 is the minimum size for the subset for which the scores are withing 0.2 standard deviations of optimum. We pick 6 as the best subset size and find best 6 variables using entire data.**
+
+```{r}
+reg.fit <-  regsubsets(Outstate ~ . , data=College, method="forward")
+coefi <-  coef(reg.fit, id=6)
+names(coefi)
+```
+
+
+(b) Fit a GAM on the training data, using out-of-state tuition as the response and the features selected in the previous step as the predictors. Plot the results, and explain your findings.
+
+```{r}
+library(gam)
+gam.fit <-  gam(Outstate ~ Private + s(Room.Board, df=2) + 
+                  s(PhD, df=2) + s(perc.alumni, df=2) + 
+                  s(Expend, df=5) + s(Grad.Rate, df=2),
+                data=College.train)
+par(mfrow=c(2, 3))
+plot(gam.fit, se=TRUE, col="blue")
+```
+
+(c) Evaluate the model obtained on the test set, and explain the results obtained.
+
+```{r}
+gam.pred <-  predict(gam.fit, College.test)
+gam.err <-  mean((College.test$Outstate - gam.pred)^2)
+gam.err
+gam.tss <-  mean((College.test$Outstate - mean(College.test$Outstate))^2)
+test.rss <-  1 - gam.err / gam.tss
+test.rss
+```
+
+**We obtain a test R-squared of 0.77 using GAM with 6 predictors. This is a slight improvement over a test RSS of 0.74 obtained using OLS.** 
+
+(d) For which variables, if any, is there evidence of a non-linear relationship with the response?
+
+```{r}
+summary(gam.fit)
+```
+
+**Non-parametric Anova test shows a strong evidence of non-linear relationship between response and Expend, and a moderately strong non-linear relationship (using p value of 0.05) between response and Grad.Rate or PhD.** 
+
+
+### Exercise 5.2 
+
+Apply boosting, bagging, and random forests to a data set of your choice. Be sure to fit the models on a training set and to evaluate their performance on a test set. How accurate are the results compared to simple methods like linear or logistic regression? Which of these approaches yields the best performance?
+
+**In this exercise we examine the `Weekly` stock market data from the ISLR package.**
+
+```{r}
+set.seed(1)
+library(ISLR)
+summary(Weekly)
+train <-  sample(nrow(Weekly), 2/3 * nrow(Weekly))
+test <-  -train
+```
+
+**Logistic regression**
+
+```{r}
+glm.fit <-  glm(Direction ~ . -Year-Today, 
+                data=Weekly[train,], 
+                family="binomial")
+
+glm.probs <-  predict(glm.fit, newdata=Weekly[test, ], 
+                      type = "response")
+glm.pred <-  rep("Down", length(glm.probs))
+glm.pred[glm.probs > 0.5] <-  "Up"
+table(glm.pred, Weekly$Direction[test])
+mean(glm.pred != Weekly$Direction[test])
+```
+
+**Boosting**
+
+```{r}
+library(gbm)
+Weekly$BinomialDirection <-  ifelse(Weekly$Direction == "Up", 1, 0)
+
+boost.weekly <-  gbm(BinomialDirection~.-Year-Today-Direction,
+                     data=Weekly[train,], 
+                     distribution="bernoulli", 
+                     n.trees=5000)
+
+yhat.boost <-  predict(boost.weekly, 
+                       newdata=Weekly[test,], 
+                       n.trees=5000)
+
+yhat.pred <-  rep(0, length(yhat.boost))
+yhat.pred[yhat.boost > 0.5] <-  1
+table(yhat.pred, Weekly$BinomialDirection[test])
+mean(yhat.pred != Weekly$BinomialDirection[test])
+```
+
+**Bagging**
+
+```{r}
+Weekly <-  Weekly[,!(names(Weekly) %in% c("BinomialDirection"))]
+
+library(randomForest)
+
+bag.weekly <-  randomForest(Direction~.-Year-Today, 
+                            data=Weekly, 
+                            subset=train, 
+                            mtry=6)
+
+yhat.bag <-  predict(bag.weekly, newdata=Weekly[test,])
+table(yhat.bag, Weekly$Direction[test])
+mean(yhat.bag != Weekly$Direction[test])
+```
+
+**Random forests**
+
+```{r}
+rf.weekly <-  randomForest(Direction ~ . -Year-Today, 
+                           data=Weekly, 
+                           subset=train, 
+                           mtry=2)
+
+yhat.bag <-  predict(rf.weekly, newdata=Weekly[test,])
+table(yhat.bag, Weekly$Direction[test])
+mean(yhat.bag != Weekly$Direction[test])
+```
+
+**Best performance summary: Boosting resulted in the lowest validation set test error rate.**
+
+### Exercise 5.3
+
+We now use boosting to predict `Salary` in the `Hitters` dataset, which is part of the `ISLR` package.
+
+(a) Remove the observations for whom the salary information is unknown, and then log-transform the salaries.
+
+```{r}
+library(ISLR)
+sum(is.na(Hitters$Salary))
+Hitters <-  Hitters[-which(is.na(Hitters$Salary)), ]
+sum(is.na(Hitters$Salary))
+Hitters$Salary <-  log(Hitters$Salary)
+```
+
+(b) Create a training set consisting of the first 200 observations, and a test set consisting of the remaining observations.
+
+```{r}
+train <-  1:200
+Hitters.train <-  Hitters[train, ]
+Hitters.test <-  Hitters[-train, ]
+```
+
+(c) Perform boosting on the training set with 1,000 trees for a range of values of the shrinkage parameter $\lambda$. Produce a plot with different shrinkage values on the $x$-axis and the corresponding training set MSE on the $y$-axis.
+
+```{r}
+library(gbm)
+set.seed(103)
+pows <-  seq(-10, -0.2, by=0.1)
+lambdas <-  10 ^ pows
+length.lambdas <-  length(lambdas)
+train.errors <-  rep(NA, length.lambdas)
+test.errors <-  rep(NA, length.lambdas)
+
+for (i in 1:length.lambdas) {
+  boost.hitters <-  gbm(Salary ~ . , data=Hitters.train,
+                        distribution="gaussian",
+                        n.trees=1000,
+                        shrinkage=lambdas[i])
+  train.pred <-  predict(boost.hitters, Hitters.train, n.trees=1000)
+  test.pred <-  predict(boost.hitters, Hitters.test, n.trees=1000)
+  train.errors[i] <-  mean((Hitters.train$Salary - train.pred)^2)
+  test.errors[i] <-  mean((Hitters.test$Salary - test.pred)^2)
+}
+
+plot(lambdas, train.errors, type="b", 
+     xlab="Shrinkage", ylab="Train MSE", 
+     col="blue", pch=20)
+```
+
+(d) Produce a plot with different shrinkage values on the $x$-axis and the corresponding test set MSE on the $y$-axis.
+
+```{r}
+plot(lambdas, test.errors, type="b", 
+     xlab="Shrinkage", ylab="Test MSE", 
+     col="red", pch=20)
+min(test.errors)
+lambdas[which.min(test.errors)]
+```
+
+**Minimum test error is obtained at $\lambda = 0.05$.**
+
+(e) Compare the test MSE of boosting to the test MSE that results from applying two of the regression approaches seen in our discussions of regression models.
+
+```{r}
+lm.fit <-  lm(Salary ~ . , data=Hitters.train)
+lm.pred <-  predict(lm.fit, Hitters.test)
+mean((Hitters.test$Salary - lm.pred)^2)
+
+library(glmnet)
+set.seed(134)
+
+x <-  model.matrix(Salary ~ . , data=Hitters.train)
+y <-  Hitters.train$Salary
+x.test <-  model.matrix(Salary ~ . , data=Hitters.test)
+lasso.fit <-  glmnet(x, y, alpha=1)
+lasso.pred <-  predict(lasso.fit, s=0.01, newx=x.test)
+mean((Hitters.test$Salary - lasso.pred)^2)
+```
+
+**Both linear model and regularization like Lasso have higher test MSE than boosting.**
+
+(f) Which variables appear to be the most important predictors in the boosted model?
+
+```{r}
+boost.best <-  gbm(Salary ~ . , data=Hitters.train,
+                   distribution="gaussian", n.trees=1000,
+                   shrinkage=lambdas[which.min(test.errors)])
+summary(boost.best)
+```
+
+`CAtBat`, `CRBI` and `CWalks` are three most important variables in that order.
+
+(g) Now apply bagging to the training set. What is the test set MSE for this approach?
+
+```{r}
+library(randomForest)
+set.seed(21)
+rf.hitters <-  randomForest(Salary ~ . , data=Hitters.train, 
+                            ntree=500, mtry=19)
+rf.pred <-  predict(rf.hitters, Hitters.test)
+mean((Hitters.test$Salary - rf.pred)^2)
+```
+
+**Test MSE for bagging is about $0.23$, which is slightly lower than the best test MSE for boosting.**
