@@ -3,7 +3,7 @@
 
 [Slava Mikhaylov](s.mikhaylov@ucl.ac.uk)
 
-**Version:** September 28, 2016
+**Version:** November 13, 2016
 
 This repository contains the class materials for the course *PUBLG088 Advanced Quantitative Methods* taught in Term 1 2016.  
 
@@ -72,10 +72,10 @@ We will walk you through this process in the first two weeks, so don't worry if 
 - [Datathon 1 task description](week5/Practice_Datathon1.Rmd) and Datathon [R presentation](week5/Datathon1.Rpres), World Development Indicators [data file](week5/WDI_Data.csv) and [variable descriptions](week5/WDI_Definition_and_Source.csv). 
 
 
-#### November 15: Neural Networks and Deep Learning
-
-
 #### November 15: Support Vector Machines and Unsupervised Learning
+
+
+#### November 22: Neural Networks and Deep Learning
 
 
 #### November 29: Vector Space Model
