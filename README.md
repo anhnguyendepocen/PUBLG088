@@ -74,6 +74,11 @@ We will walk you through this process in the first two weeks, so don't worry if 
 
 #### November 15: Support Vector Machines and Unsupervised Learning
 
+- [Lecture Notes](week6/PUBLG088_week6.pdf)
+- [Assignment 6](week6/Week6_LASTNAME_FIRSTNAME.Rmd)
+- [Solution 6](week6/Week6_assignment6_solution.Rmd)
+- [Datathon 2 task description](week6/Practice_Datathon2.Rmd)
+
 
 #### November 22: Neural Networks and Deep Learning
 
