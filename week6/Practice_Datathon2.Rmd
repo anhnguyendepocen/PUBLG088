@@ -1,0 +1,75 @@
+---
+title: "Practice Datathon 2"
+author: "Slava Mikhaylov"
+output: html_document
+---
+
+This is the second practice exercise that follows the overall structure of final assessment for the course. This is a formative assessment designed to help you develop necessary expertise for the final, summative assessment.
+
+You will be working in small groups on this exercise. You will have a week to complete the exercise. You will present your results in class on November 22nd.
+
+The model for the exercise is a data hackathon.  A data hackathon is an intensive exercise that asks researchers to do their best to turn information into knowledge. Data hackathons (datathons) use research questions and datasets to advance knowledge.
+
+For this exercise you will frame a research question, create and implement a research design, mobilize data resources and present your findings in the form of R Presentation. 
+
+If you wish to refresh your knowledge of research design, you should read first four chapters of Kellstedt, Paul M. and Guy D. Whitten (2013) _The Fundamentals of Political Science Research_, 2nd edition, Cambridge University Press. This was part of summer pre-readings for the course. There are copies of the book in the library if needed. 
+
+For the datathon you will have to grab data from World Development Indicators database (note: basic tips in class). Using these data you are asked to address any issue of interest to you that involves extracting insights from data. Methodologically you should use **both** SVMs and unsupervised learning (at least the level covered in class) in your project.
+
+
+## R Presentation structure
+
+You should carefully think what to include on the slides. The content shouldn't be dense, hence you should include only the absolutely necessary material. You should follow the structure of the presentation below. You may go beyond eight slides but you cannot have more than eleven slides overall. You will have **10 minutes** for presentation in class. You should also practice your presentation before class.
+
+
+1. Slide 1: Names, Date, Module.
+2. Slide 2: Introduction
+    + What social/policy question was asked or challenge addressed? Why is this question important or the challenge critical?
+    + What datasets were used?
+    + What is the novel contribution?
+    + What is the key methodology or methodologies used?
+    + What are the key findings?
+
+3. Slide 3: Previous Work
+    + A couple relevant pieces of previous work on the topic of your research.
+    **Use Google Scholar to find relevant previous work.**
+
+4. Slide 4: Theoretical Framework
+    + List the hypotheses that you're testing in this project.
+    **No more than two hypotheses. You list H0, you don't need to list corresponding H1.**
+    
+5. Slide 5: Data description
+    + You should provide summary statistics for your variables.
+    + A visualization of main spatio-temporal trends in your variables. 
+      **For visualisation use _ggplot_.**
+
+6. Slide 6: Methodology
+    + This slide serves the purpose of detailing how you will go about testing the hypotheses laid out above.
+    + Describe methods you use to test the relationship, operationalization of your variables (outcome variable, key predictors, and controls). If you're developing a prediction model, discuss how your prediction address hypotheses above.
+
+7. Slide 7: Results 
+    + Detail findings from most important to least. Begin, therefore, by discussing the results as they pertain to your hypotheses -- can you reject your hypotheses? How your results (e.g. from prediction model) can be validated?
+    + You should present the findings in summary form -- a table of results or a graph. **Use _texreg_ (or _stargazer_, _apsrtable_ or equivalent) to present results in tabular form. You can also use _coefplot_ style plots (or any other visualisation of results).**
+
+8. Slide 8: Conclusion and Discussion
+    + Provide an interesting overview of the study. What have we learned? 
+    + Next, discuss the limitations of your study, also what could be done to improve/build upon the study. You can demonstrate some self-criticism.
+    + Finally and perhaps most importantly, discuss policy implications of your study. 
+
+
+## Submission
+
+* Save your presentation as HTML and upload to Weekly Assignments folder on Moodle before 2pm on Tuesday, November 22nd.
+* Load your Rpres and HTML files on a flash drive and bring to class. 
+
+
+## What we are looking for
+
+A strong project will have the following components:
+
+* Follow the structure of the project outlined above, and consist of maximum 11 slides.
+* Employ the dataset specified.
+* Include a high quality _ggplot_ visualization.
+* Develop an empirical model that would allow to test the stated hypotheses. 
+* Generate an interesting empirical finding.
+* In addition, a strong presentation should be well-written and provide some level of creativity in its use of or combination of data. Slides shouldn't be dense with text.
