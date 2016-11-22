@@ -80,16 +80,19 @@ We will walk you through this process in the first two weeks, so don't worry if 
 - [Datathon 2 task description](week6/Practice_Datathon2.Rmd)
 
 
-#### November 22: Neural Networks and Deep Learning
+#### November 22: NN and Vector Space Model
+
+- [Lecture Notes](week7/PUBLG088_week7.pdf)
+- [Datathon 3 task description](week7/Practice_Datathon3.Rmd)
 
 
-#### November 29: Vector Space Model
+#### November 29: Word embedding models
 
 
-#### December 6: Word embedding models
+#### December 6: Topic models
 
 
-#### December 13: Topic models
+#### December 13: Final project
 
 
 #### Research paper: 
