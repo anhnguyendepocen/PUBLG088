@@ -88,6 +88,9 @@ We will walk you through this process in the first two weeks, so don't worry if 
 
 #### November 29: Word embedding models
 
+- [Lecture Notes](week8/PUBLG088_week8.pdf)
+- [Datathon 4 task description](week8/Practice_Datathon4.Rmd)
+
 
 #### December 6: Topic models
 
