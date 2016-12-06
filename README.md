@@ -94,6 +94,8 @@ We will walk you through this process in the first two weeks, so don't worry if 
 
 
 #### December 6: Topic models
+- [Lecture Notes](week9/PUBLG088_week9.pdf)
+- [Final project proposal](week9/Project_proposal.Rmd)
 
 
 #### December 13: Final project
