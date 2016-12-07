@@ -90,11 +90,14 @@ We will walk you through this process in the first two weeks, so don't worry if 
 
 - [Lecture Notes](week8/PUBLG088_week8.pdf)
 - [Datathon 4 task description](week8/Practice_Datathon4.Rmd)
-- Example code in the Week8 folder on GitHub: `word_embedding.R` (from text2vec vignette); `climate_changeUN.R` (same code applied to UNGD corpus); and `ungd_example_analysis.R` (example code for UNGD analysis).
+- [Example code UNGD analysis](week8/ungd_example_analysis.R)
+- [Example code word embeddings from text2vec](week8/word_embedding.R)
+- [Example code word embeddings climate change](week8/climate_changeUN.R)
 
 
 #### December 6: Topic models
 - [Lecture Notes](week9/PUBLG088_week9.pdf)
+- [Example code](week9/week9examples.R)
 - [Final project proposal](week9/Project_proposal.Rmd)
 
 
