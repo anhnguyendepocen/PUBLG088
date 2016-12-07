@@ -10,6 +10,7 @@ require(quanteda)
 data(SOTUCorpus, package = "quantedaData")
 presDfm <- dfm(subset(SOTUCorpus, Date > as.Date("1900-01-01")), stem = TRUE)
 presDfm <- trim(presDfm, minCount = 5, minDoc = 3)
+
 require(topicmodels)
 presLDA <- LDA(presDfm, k = 30)
 # which terms contribute most to each topic

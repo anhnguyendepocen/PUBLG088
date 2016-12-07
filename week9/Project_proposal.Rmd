@@ -1,0 +1,33 @@
+---
+title: "Project proposal"
+author: "Slava Mikhaylov"
+output: html_document
+---
+
+## General assessment description
+
+The assessment follows a model of a data hackathon, but with a longer time frame.  A data hackathon is an intensive exercise that asks researchers to do their best to turn information into knowledge. Data hackathons (datathons) use research questions and datasets to advance knowledge.
+
+For the final assessment you will frame a research question, create and implement a research design, mobilize data resources and present your findings in the form of 3,000-word research paper. This research paper forms 100% of the mark for the module. 
+
+We've held four mini-datathons during the term as formative assessments. These were designed to help you develop necessary expertise for the final, summative assessment.
+
+For the final project (datathon) you will use UNGD corpus (http://ungd.smikhaylov.net). You can read more about the data (and some applications) here: (http://www.smikhaylov.net/wp-content/uploads/2016/09/The-General-Debate-of-the-United-Nations.pdf).
+
+
+Using this dataset and at least one other dataset of your choice you are asked to address any issue of interest to you that involves extracting insights from textual data. All papers must have a strong social theory, political theory or policy perspective and a strong methodology perspective. Methodology used in your paper should be at least at the level of methods covered in the module.
+
+
+## Project proposal
+
+By 10am on Monday in Week 10 upload to a corresponding folder on Moodle page for the module a max 2-page proposal outlining the Introduction (see Research Paper Structure section in syllabus) of your research paper (this may be in bullet points): 
+
+- What social/policy question was asked or challenge addressed? Why is this question important or the challenge critical?
+- What datasets were used?
+- What is the novel contribution?
+- What is the key methodology or methodologies used?
+- What are the key findings?
+
+In our Week 10 class we'll discuss your proposals.
+
+
